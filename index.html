@@ -4,8 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ravinder</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .section-p{
+            margin: 20px;
+            padding: 30px;
+        }
+
+        body{
+            background-image: url(hero-bg.jpg);
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            width: 100%;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            background-color:rgb(9, 237, 237);
+            padding:10px 30px;
+        }
+        
+        .navbar ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+        }
+
+        .navbar li {
+            margin: 0 12px;
+            padding: 7px 14px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .navbar li:hover {
+            background-color: white;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: #222;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .navbar li:hover a {
+            color: rgb(9, 237, 237);
+        }
+        button{
+            font-size: 15px;
+            font-weight: 500;
+            background-color:rgb(9, 237, 237);
+            border-radius:20px;
+            color:white;
+        }
+        .neon-btn {
+            border: 2px solid #0ff;
+            padding: 12px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: 0.3s;
+            box-shadow: 0 0 10px #0ff, 0 0 20px #0ff inset;
+            margin-top:60px;
+            }
+
+        .neon-btn:hover {
+            box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff;
+        }
+
+        #home{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top:60px;
+        }
+        .photo img {
+            width:30vw;      
+            height:30vw;
+            border-radius: 50%;  
+            border: 4px solid rgb(9, 237, 237); 
+            object-fit: cover;   
+            background-color: white; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+        }
+        .info{
+            width: auto;
+            height:30vw;
+        }
+        .info h2{
+            color: rgb(9, 237, 237);
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size:50px;
+            font-weight: 800;
+        }
+        .info p{
+            margin-top: 10px;
+            color:rgb(113, 109, 109);
+            font-size: 20px;
+        }
+        .info h3{
+            font-size: 30px;
+        }
+
+
+
+
+    </style>
 </head>
 <body>
-    
+    <header>
+        <div class="logo">Ravinder</div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#skills">SKILL</a></li>
+                <li><a href="#projects">PROJECT</a></li>
+                <li><a href="#about">ABOUT</a></li>
+            </ul>
+        </div>
+    </header>
+    <section id="home" class="section-p">
+        <div class="info">
+            <h3>Hii i'm</h3>
+            <h2>Ravinder Mauriya</h2>
+            <h3>Full Stack Web Developer</h3>
+            <p>Turning ideas into interactive websites with clean code and creative design.</p>
+            <button class="neon-btn">Download Resume</button>
+        </div>
+        <div class="photo">
+            <img src="ravinder.jpg" alt="photo">
+        </div>
+    </section>
 </body>
 </html>
