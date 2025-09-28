@@ -1,0 +1,221 @@
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .section-p {
+      margin: 20px;
+      padding: 30px;
+    }
+
+    body {
+      background-image: url(hero-bg.jpg);
+      background-size: cover;
+      width: 100vw;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+      width: 100%;
+      min-height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgb(9, 237, 237);
+      padding: 10px 30px;
+
+      position:sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+    }
+
+    .navbar li {
+      margin: 0 12px;
+      padding: 7px 14px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .navbar li:hover {
+      background-color: white;
+    }
+
+    .navbar li a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .navbar li:hover a {
+      color: rgb(9, 237, 237);
+    }
+
+    button {
+      font-size: 15px;
+      font-weight: 500;
+      background-color: rgb(9, 237, 237);
+      border-radius: 20px;
+      color: white;
+      border: none;
+      cursor: pointer;
+
+      display: inline-block; 
+      text-align: center;
+      line-height: normal;
+    }
+
+    .neon-btn {
+      border: 2px solid #0ff;
+      padding: 12px 30px;
+      font-size: 18px;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: 0.3s;
+      box-shadow: 0 0 10px #0ff, 0 0 20px #0ff inset;
+      margin-top: 60px;
+
+      /* Full clickable area ke liye */
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .neon-btn:hover {
+      box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff;
+    }
+
+
+    #home {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+
+    .photo img {
+      width: 30vw;
+      height: 30vw;
+      border-radius: 50%;
+      border: 4px solid rgb(9, 237, 237);
+      object-fit: cover;
+      background-color: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .info {
+      width: auto;
+      height: 30vw;
+    }
+
+    .info h2 {
+      color: rgb(9, 237, 237);
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 50px;
+      font-weight: 800;
+    }
+
+    .info p {
+      margin-top: 10px;
+      color: rgb(113, 109, 109);
+      font-size: 20px;
+    }
+
+    .info h3 {
+      font-size: 30px;
+    }
+
+    /* card */
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      margin-top: 40px;
+      color: #222;
+    }
+    #skills{
+      margin-top: 80px;
+    }
+
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+    }
+
+    .skill-card {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(12px);
+      border-radius: 15px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 8px 20px gray;
+      transition: all 0.3s ease;
+    }
+
+    .skill-card i {
+      font-size: 40px;
+      color: #09eded;
+      margin-bottom: 15px;
+    }
+
+    .skill-card h3 {
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      color: #222;
+    }
+
+    .skill-card p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 12px 25px rgb(9, 237, 237);
+    }
+
+    /* responsive */
+    @media (max-width: 768px) {
+  #home {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
+  .info {
+    height: auto; 
+    margin-bottom: 30px;
+  }
+
+  .photo img {
+    margin-top: 20px;
+    width: 60vw;
+    height: 60vw;
+  }
+
+  #skills {
+    padding-top: 40px;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  
+}
+

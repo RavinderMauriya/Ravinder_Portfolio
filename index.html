@@ -1,150 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ravinder</title>
-    <style>
-        *{
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        .section-p{
-            margin: 20px;
-            padding: 30px;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ravinder</title>
+  <script src="https://kit.fontawesome.com/90717ff3bb.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
 
-        body{
-            background-image: url(hero-bg.jpg);
-            background-size: cover;
-            width: 100vw;
-            height: 100vh;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        header{
-            width: 100%;
-            min-height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content:space-between;
-            background-color:rgb(9, 237, 237);
-            padding:10px 30px;
-        }
-        
-        .navbar ul {
-            display: flex;
-            align-items: center;
-            list-style: none;
-        }
-
-        .navbar li {
-            margin: 0 12px;
-            padding: 7px 14px;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
-
-        .navbar li:hover {
-            background-color: white;
-        }
-
-        .navbar li a {
-            text-decoration: none;
-            color: #222;
-            font-weight: 500;
-            transition: 0.3s;
-        }
-
-        .navbar li:hover a {
-            color: rgb(9, 237, 237);
-        }
-        button{
-            font-size: 15px;
-            font-weight: 500;
-            background-color:rgb(9, 237, 237);
-            border-radius:20px;
-            color:white;
-        }
-        .neon-btn {
-            border: 2px solid #0ff;
-            padding: 12px 30px;
-            font-size: 18px;
-            cursor: pointer;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: 0.3s;
-            box-shadow: 0 0 10px #0ff, 0 0 20px #0ff inset;
-            margin-top:60px;
-            }
-
-        .neon-btn:hover {
-            box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff;
-        }
-
-        #home{
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            margin-top:60px;
-        }
-        .photo img {
-            width:30vw;      
-            height:30vw;
-            border-radius: 50%;  
-            border: 4px solid rgb(9, 237, 237); 
-            object-fit: cover;   
-            background-color: white; 
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
-        }
-        .info{
-            width: auto;
-            height:30vw;
-        }
-        .info h2{
-            color: rgb(9, 237, 237);
-            margin-top: 10px;
-            margin-bottom: 10px;
-            font-size:50px;
-            font-weight: 800;
-        }
-        .info p{
-            margin-top: 10px;
-            color:rgb(113, 109, 109);
-            font-size: 20px;
-        }
-        .info h3{
-            font-size: 30px;
-        }
-
-
-
-
-    </style>
 </head>
 <body>
-    <header>
-        <div class="logo">Ravinder</div>
-        <div class="navbar">
-            <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#skills">SKILL</a></li>
-                <li><a href="#projects">PROJECT</a></li>
-                <li><a href="#about">ABOUT</a></li>
-            </ul>
-        </div>
-    </header>
-    <section id="home" class="section-p">
-        <div class="info">
-            <h3>Hii i'm</h3>
-            <h2>Ravinder Mauriya</h2>
-            <h3>Full Stack Web Developer</h3>
-            <p>Turning ideas into interactive websites with clean code and creative design.</p>
-            <button class="neon-btn">Download Resume</button>
-        </div>
-        <div class="photo">
-            <img src="ravinder.jpg" alt="photo">
-        </div>
-    </section>
+  <header>
+    <div class="logo">Ravinder</div>
+    <div class="navbar">
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#skills">SKILL</a></li>
+        <li><a href="#projects">PROJECT</a></li>
+        <li><a href="#about">ABOUT</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section id="home" class="section-p">
+    <div class="info">
+      <h3>Hii I'm</h3>
+      <h2>Ravinder Mauriya</h2>
+      <h3>Full Stack Web Developer</h3>
+      <p>Turning ideas into interactive websites with clean code and creative design.</p>
+      <button class="neon-btn">Download Resume</button>
+    </div>
+    <div class="photo">
+      <img src="ravinder.jpg" alt="photo">
+    </div>
+  </section>
+
+  <section id="skills" class="section-p">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        <i class="fab fa-html5"></i>
+        <h3>HTML</h3>
+        <p>Building semantic and accessible web structures.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fab fa-css3-alt"></i>
+        <h3>CSS</h3>
+        <p>Designing responsive, modern, and clean UI layouts.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fab fa-js"></i>
+        <h3>JavaScript</h3>
+        <p>Interactive features and dynamic web applications.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fab fa-php"></i>
+        <h3>PHP</h3>
+        <p>Server-side scripting and backend logic.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fas fa-database"></i>
+        <h3>MySQL</h3>
+        <p>Database management and optimized queries.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fas fa-file-powerpoint"></i>
+        <h3>PowerPoint</h3>
+        <p>Creating professional and engaging presentations.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fas fa-table"></i>
+        <h3>Advanced Excel</h3>
+        <p>Data analysis, pivot tables, and complex formulas.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fas fa-calculator"></i>
+        <h3>Tally Prime</h3>
+        <p>Accounting and financial management expertise.</p>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+  </section>
 </body>
 </html>
