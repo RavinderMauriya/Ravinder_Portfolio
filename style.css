@@ -247,7 +247,36 @@ button {
   color: #444;
   margin-bottom: 20px;
 }
+.space{
+  margin-left: 20px;
+}
 
+/* About Section */
+#about {
+ 
+  padding: 60px 20px;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+#about p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#about strong {
+  color: rgb(9, 237, 237);
+}
+
+#about .neon-btn {
+  margin-top: 20px;
+}
 
 
 /* responsive */
@@ -285,6 +314,19 @@ button {
   .project-images,
   .project-info {
     max-width: 100%;
+  }
+
+  #about {
+    padding: 40px 15px;
+  }
+
+  .about-container {
+    text-align: left; /* mobile pe left align */
+  }
+
+  #about p {
+    font-size: 16px;
+    line-height: 1.6;
   }
 
 }
