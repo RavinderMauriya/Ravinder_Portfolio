@@ -15,6 +15,8 @@ body {
   width: 100vw;
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  /*x-axis scroll hidden */
 }
 
 header {
@@ -51,7 +53,7 @@ header {
 .navbar li a {
   text-decoration: none;
   color: #222;
-  font-weight: 500;
+  font-weight: 600;
   transition: 0.3s;
 }
 
@@ -84,7 +86,7 @@ button {
   box-shadow: 0 0 10px #0ff, 0 0 20px #0ff inset;
   margin-top: 60px;
 
-  /* Full clickable area ke liye */
+  /* for Full clickable area */
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -247,13 +249,13 @@ button {
   color: #444;
   margin-bottom: 20px;
 }
-.space{
+
+.space {
   margin-left: 20px;
 }
 
 /* About Section */
 #about {
- 
   padding: 60px 20px;
 }
 
@@ -270,6 +272,18 @@ button {
   margin-bottom: 20px;
 }
 
+.project-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-buttons .neon-btn {
+  margin-top: 0;
+}
+
 #about strong {
   color: rgb(9, 237, 237);
 }
@@ -279,6 +293,7 @@ button {
 }
 
 
+
 /* responsive */
 @media (max-width: 768px) {
   #home {
@@ -286,6 +301,19 @@ button {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 60px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navbar ul {
+    width: 100%;
+  }
+
+  .navbar li {
+    text-align: center;
+    margin: 5px 0;
   }
 
   .info {
@@ -299,8 +327,28 @@ button {
     height: 60vw;
   }
 
+  .project-buttons {
+    gap: 2px;
+  }
+  .project-buttons {
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; 
+    width: 100%;
+  }
+
+  .neon-btn {
+    text-align: center;
+    width: 100%;
+  }
+
   #skills {
-    padding-top: 40px;
+    padding-top: 20px;
+  }
+
+  .skill-card {
+    padding: 11px;
+    box-shadow: 0 12px 25px rgb(9, 237, 237);
   }
 
   .skills-container {
@@ -321,7 +369,7 @@ button {
   }
 
   .about-container {
-    text-align: left; /* mobile pe left align */
+    text-align: left;
   }
 
   #about p {
