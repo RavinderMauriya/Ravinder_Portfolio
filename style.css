@@ -10,11 +10,15 @@
 }
 
 body {
-  background-image: url(hero-bg.jpg);
+  /* background-image: url("hero-bg.jpg"); */
+  background: linear-gradient(135deg, #f9f9f9, #e8ecef);
   background-size: cover;
+  background-size: auto;
+  background-position: top left;
+  background-repeat: repeat;
   width: 100vw;
   min-height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial,sans-serif;
   overflow-x: hidden;
   /*x-axis scroll hidden */
 }
@@ -285,11 +289,20 @@ button {
 }
 
 #about strong {
-  color: rgb(9, 237, 237);
+  color: rgb(8, 147, 147);
 }
 
-#about .neon-btn {
-  margin-top: 20px;
+
+.contact i{
+  font-size: 40px;
+  font-weight: 600;
+  color: #09eded;
+  margin: 10px;
+  cursor: pointer;
+}
+.contact i:hover {
+  color: white;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
 }
 
 
