@@ -10,8 +10,7 @@
 }
 
 body {
-  /* background-image: url("hero-bg.jpg"); */
-  background: linear-gradient(135deg, #f9f9f9, #e8ecef);
+  background-image: url("hero-bg.jpg"); 
   background-size: cover;
   background-size: auto;
   background-position: top left;
@@ -35,6 +34,10 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+}
+.logo{
+  font-weight:800;
+  color:#111;
 }
 
 .navbar ul {
@@ -98,6 +101,16 @@ button {
 
 .neon-btn:hover {
   box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff;
+}
+
+a {
+  text-decoration:none;
+  color:inherit;
+}
+.project-buttons a{
+  color:white;
+  background-color:rgb(9, 237, 237);
+  border-radius:20px;
 }
 
 
